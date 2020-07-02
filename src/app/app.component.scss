@@ -1,0 +1,19 @@
+ion-content,ion-toolbar{
+    --ion-background-color: linear-gradient(#f04141, #f04141);
+}
+ion-label,ion-icon,ion-item,ion-title{
+    color: white;  
+}
+div{
+    width: 100%;
+    height: 30%;
+}
+ion-img{
+height: 60%;
+width: 60%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+position: relative;
+align-content: center;
+}

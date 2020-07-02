@@ -1,0 +1,22 @@
+ion-content{
+    --ion-background-color: linear-gradient(#0062FF, rgb(29, 56, 99));
+}
+.logo ion-img{
+    font-size: 9em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+}
+.logo{
+    position: relative;
+    height: 90px;
+}
+.boutton{
+    margin-top: 5%;
+}
+ion-item{
+  --ion-background-color:transparent!important;
+}

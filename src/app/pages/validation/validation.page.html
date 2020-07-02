@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cart"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Achats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card> 
+        <ion-card-content>
+            <ion-img src="/assets/commande.jpg"></ion-img>
+          Commander votre panier de pizza aprés validation vous recevrez un message d'alerte pour que vous puissez 
+          venir recupérer votre commande.
+        </ion-card-content>
+        <ion-button  expand="full" shape="round" color="danger" (click)="com()"><ion-icon slot="start" name="basket" ></ion-icon> Commande </ion-button>
+    </ion-card>
+  
+    <ion-card> 
+          <ion-card-content>
+              <ion-img src="/assets/livraison.jpg"></ion-img>
+           Votre panier de pizza sera livré à domicil selon votre adresse de destination plus le frais 
+           de transport de 1500Franc.
+          </ion-card-content>
+          <ion-button expand="full" shape="round" color="danger" disabled="false" (click)="livraison()"><ion-icon slot="start" name="bus"></ion-icon> livraison </ion-button>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,53 @@
+
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="../aceuil"></ion-back-button>
+          </ion-buttons>
+    </ion-toolbar>
+
+
+<ion-content padding>
+
+<div class="logo">
+  <ion-img src="../../../assets/logo.png"></ion-img>
+</div>
+
+<ion-item >
+    <ion-input color="light" type="text" [(ngModel)]="item.prenom" placeholder="Prenom"></ion-input>
+</ion-item>
+
+<ion-item >
+    <ion-input color="light" type="text" [(ngModel)]="item.nom" placeholder="Nom"></ion-input>
+</ion-item>
+
+<ion-item >
+    <ion-input color="light" type="number" [(ngModel)]="item.telephone" placeholder="Telephone"></ion-input>
+</ion-item>
+
+
+
+<ion-item >
+    <ion-input color="light" [(ngModel)]="item.email" type="mail" placeholder="Email"></ion-input>
+</ion-item>
+
+<ion-item >
+    <ion-input color="light" type="password" [(ngModel)]="item.password" placeholder="Mot de Passe"></ion-input>
+    
+</ion-item>
+<ion-item> <ion-label color="light" slot="end" fill="clear">
+    mot de passe doit comporter au moins six caractères
+</ion-label> </ion-item>
+
+<ion-item >
+    <ion-input color="light" type="password" [(ngModel)]="item.cpassword" placeholder="Confirmer votre Mot de Passe"></ion-input>
+</ion-item>
+
+<!--Boutton de validation-->
+<div class="boutton">
+<ion-button color="primary" shape="round" expand="full"  (click)="onClick()" >S'inscrire</ion-button>
+</div>
+
+
+
+
+</ion-content>

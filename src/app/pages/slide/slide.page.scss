@@ -1,0 +1,49 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  ion-content,ion-toolbar{
+    
+  --ion-background-color:linear-gradient(#f04141, #f04141);
+  }
+.background{
+  //--background: url(../../../assets/fond.png) no-repeat;
+  //background-color: #e6eaff;
+  background-image: url(../../../assets/11.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.con{
+  height: 5px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+.conn{
+  transform: translate(-50%,-50%);
+  left: 50%;
+  width: 30%;
+}
+
+.swiper-slide.swiper-slide {
+    display: block;
+  }
+  ion-slide > h2 {
+    margin-top: 2.8rem;
+  }
+  ion-slide > img {
+    max-height: 50%;
+    max-width: 60%;
+    margin: 36px 0;
+  }
+  h3,p,b{
+    color: white;
+  }
+  /*div{
+    //top:90%;
+    position: absolute;
+
+  }*/
+  h2{
+    color:#e6eaff;
+  }

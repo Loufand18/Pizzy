@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/validation"></ion-back-button>
+          </ion-buttons>
+      <ion-title>Commande</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding text-center>
+
+    <ion-item>
+      <ion-label>Prenom</ion-label>
+      <ion-input color="danger" expand="block" type="text" [(ngModel)]="item.prenom" placeholder="Entrer votre prenom"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Nom</ion-label>
+        <ion-input color="danger" expand="block" type="text" [(ngModel)]="item.nom" placeholder="Entrer votre nom"></ion-input>
+      </ion-item>
+
+
+    <p>Payer par Orange Money </p>
+  
+    <ion-card>
+        <ion-card-content>   
+          <ion-img src="/assets/om.jpg"></ion-img>
+            <ion-item>
+                <ion-label position="floating" type="number" >Telephone +221</ion-label>
+                <ion-input [(ngModel)]="item.telephone"></ion-input>
+              </ion-item>
+            <ion-button color="danger" shape="round" expand="full" (click)="onClick()">envoyer</ion-button>
+        </ion-card-content>
+      </ion-card>
+  
+  </ion-content>
+  

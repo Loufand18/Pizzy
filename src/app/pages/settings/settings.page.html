@@ -1,0 +1,42 @@
+
+    <ion-menu contentId="content" type="overlay">
+      <ion-content>
+        <div class="espace">
+          <ion-img src="../assets/logo.png"></ion-img>
+        </div>
+
+        <ion-list>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+              <ion-item [routerDirection]="root" [routerLink]="[p.url]" line="none">
+                <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title}}  
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+<!--ion-menu contentId="content">
+
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content >
+      <div *ngFor="let p of pages">
+      <ion-menu-toggle *ngIf="p.url">
+        <ion-item [routerLink]="p.url" routerDirection="root" routerLinkActive="active">
+        <ion-icon [name]="p.icon" slot="start"></ion-icon>
+        <ion-label>
+           {{p.title}}
+        </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      </div>
+    </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content" main></ion-router-outlet-->

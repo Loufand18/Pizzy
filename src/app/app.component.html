@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu type="overlay">
+      <ion-content>
+        <div class="espace">
+          <ion-img src="../assets/logo.png"></ion-img>
+        </div>
+
+        <ion-list>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+              <ion-item [routerDirection]="root" [routerLink]="[p.url]" line="none">
+                <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title}}  
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
+<!--ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app-->
